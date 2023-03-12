@@ -132,9 +132,6 @@ async def echo(message: types.Message):
     else:
         await message.reply(message.text)
 
-@dp.message_handler()
-async def echo(message: types.Message):
-    await bot.send_message(chat_id=message.from_user.id, text=message.text)
 
 
 if __name__ == '__main__':
