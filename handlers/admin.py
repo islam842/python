@@ -14,6 +14,3 @@ async def emoji(message: types.Message):
 
 def register_handlers_client(dp: Dispatcher):
     dp.register_message_handler(emoji)
-
-
-
